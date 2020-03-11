@@ -3,7 +3,8 @@
 ##解决痛点
 用过kylin restapi的，我想大家应该都会特别痛苦吧，返回的数据完全不是java能hold住的，附上官网链接
 http://kylin.apache.org/cn/docs/howto/howto_use_restapi.html，下面是官网返回的demo：
-`{  
+```
+{  
     "columnMetas":[  
        {  
           "isNullable":1,
@@ -82,15 +83,15 @@ http://kylin.apache.org/cn/docs/howto/howto_use_restapi.html，下面是官网�
     "partial":false
  }
  
-`
+```
 
 ## 用法
 本框架用法和feign以及mybatis接口注解相似，能快速上手。比如：<br>
-`
+```
 @KylinRepository
  public interface KylinUseDemo {
  	@KylinMethod(sql = "sql", totalSql = "totalSql")
  	List<KylinResponseTestDTO> getSkillSummaryRequestDemo(KylinPageRequestDTO<KylinRequestTestDTO> kylinPageRequestDTO);
  }
- `
+ ```
  
