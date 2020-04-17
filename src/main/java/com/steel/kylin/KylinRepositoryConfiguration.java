@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * datetime 2020/1/8 12:52
  */
 @Configuration
-public class KylinRepositoryConfiger {
+public class KylinRepositoryConfiguration {
 
 	@Bean
 	@ConditionalOnMissingBean
